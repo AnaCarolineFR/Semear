@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js" integrity="sha512-pHVGpX7F/27yZ0ISY+VVjyULApbDlD0/X0rgGbTqCE7WFW5MezNTWG/dnhtbBuICzsd0WQPgpE4REBLv+UqChw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/mask.js"></script>
+    <script src="js/validacao.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Semear</title>
+</head>
+<body>
+    <header></header>
+ <main>  
+     <h2>QUERO FAZER PARTE DA</h2>
+     <h1>rede semear</h1>
+    <section id="formulario"> 
+        <form id="valida" id="valida" method="post"  onsubmit="return validacao();">
+            <label for="cpf">CPF</label><br>
+            <input type="text" name="cpf" id="cpf" placeholder="999999999999" maxlength="14"><br>
+            <label for="nome">Nome</label><br>
+            <input type="text" name="Nome" id="name" placeholder="Nome"><br>
+            <label for="sobrenome">Sobrenome</label><br>
+            <input type="text" name="Sobrenome" id="name" placeholder="Sobrenome"><br>
+            <label for="email">Email</label><br>
+            <input type="email" name="email" id="email" placeholder="email@dominio"><br>
+            <label for="telefone">Telefone</label><br>
+            <input type="text" name="telefone" id="telefone" placeholder="(99) 99999-9999"><br>
+            <label for="datanascimento">Data de Nascimento</label><br>
+            <input type="date" name="datanascimento" id="datanascimento"><br>
+            <label for="genero">Gênero</label><br>
+            <select name="genero" id="genero">
+                <option></option>
+                <option>op1</option>
+                <option>op2</option>
+            </select><br>
+            <label for="cor">Cor</label><br>
+            <select name="deficiencia" id="cor">
+                <option></option>
+                <option>op1</option>
+                <option>op2</option>
+            </select><br>
+            <label for="pergunta">Como conheceu o semear?</label><br>
+            <select name="pergunta" id="pergunta">
+                <option></option>
+                <option>op1</option>
+                <option>op2</option>
+            </select><br>
+            <label for="deficiencia">Tem alguma deficiência ? </label><br>
+            <select name="deficiencia" id="deficiencia">
+                <option></option>
+                <option>op1</option>
+                <option>op2</option>
+            </select><br>
+            <input type="submit" name="enviar" id="enviar" value="Cadastrar">
+        </form>
+    </section>
+</main> 
+<footer></footer> 
+</body>
+</html>
